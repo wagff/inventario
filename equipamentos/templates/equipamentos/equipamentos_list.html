@@ -1,0 +1,13 @@
+<div>
+    <h1><a href="/">Equipamentos</a></h1>
+</div>
+
+{% for equipamento in equipamentos %}
+    <div>
+        <p>Patrimônio: <a href="">{{ equipamento.patrimonio }}</a>
+       	<p>Marca: {{ equipamento.marca }}</p>
+       	<p>Modelo: {{ equipamento.modelo }}</p>
+        <p>Cadastrado em: {{ equipamento.data_cadastro }}</p>
+     
+    </div>
+{% endfor %}
